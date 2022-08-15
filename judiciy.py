@@ -2,7 +2,7 @@ from ast import If
 from cgi import print_arguments
 from tkinter.tix import InputOnly
 from turtle import onclick
-
+from cgi import print_directory
 
 print("Hello How are u welcome to the modern chat bot$_$")
 name = input("Wats your name?\n")
@@ -26,10 +26,13 @@ if name == "Vijay" or name == "Paarth":
   if do == "Yes":
    dream = input("So what do u want to become?\n")
    print("O u want to become " +  dream  + ", itz a very good proffesion:)")
-  sc = input("Ahh so where do u live?\n")
+  sc = input("Ahh so which u live?\n")
   print("Oh u live in " + sc)
-  scl = input("So in which scl are u studing right now?\n")
-  print("Oh this a famous scl of Dehradun")
+  scl = input("So wat are u right now?\n")
+  if scl == "School" or "scl":
+      print("Oh this is a famous scl of" + sc)
+  elif scl == "Office" or "Inaternship":
+      print("Oh this is good")
   Ad = input("So can u tell yur adress to me, can u pls?pls?\n")
   print("Oh! I should Visit u sometime")
   People = input("So can u tell how many members are there in your family?\n")
@@ -67,10 +70,14 @@ if do == "No":
 if do == "Yes":
   dream = input("So what do u want to become?\n")
   print("O u want to become " +  dream  + ", itz a very good proffesion:)")
-sc = input("Ahh so where do u live?\n")
+sc = input("Ahh so which state do u live?\n")
 print("Oh u live in " + sc)
-scl = input("So in which scl are u studing right now?\n")
-print("Oh this a famous scl of Dehradun")
+scl = input("So wat are you right now?\n")
+if scl == "School" or "scl":
+      v = input("Oh so were do u study?\n")
+      print("This a famous school of " + sc)
+elif scl == "Office" or "Internship":
+     print("Oh this is famous")
 Ad = input("So can u tell yur adress to me, can u pls?pls?\n")
 print("Oh! I should Visit u sometime")
 People = input("So can u tell how many members are there in your family?\n")
@@ -92,6 +99,6 @@ if n == "Yes":
       print("Then u will u get know it in my next version cominmg soon k but u missed smth do u know what If u have typed no then u have got the releaase date of my next version u can chat again with me then u can get know when my next version is coming!!")
 if n == "No":
       print("k but if u wanna to then wait for my next version which is coming on don't know")
-by = input("Then by by" + name)
+by = input("Then by by " + name)
 if by == "by":
       print("Nice chat it was by")
